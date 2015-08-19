@@ -1,0 +1,46 @@
+<html>
+<head>
+
+<title>"angular js app"</title>
+<link rel="stylesheet" href="style2.css" type="text/css" />
+        <script type="text/javascript" src="angular.min.js"></script>
+    </head>
+<body ng-app="MainModule">
+<div id ="g">
+    <h2>TODO LIST</h2></div>
+     
+    <div id="d" ng-controller="taskCtrl">
+    
+        <div id="e">
+          <h3>New Task</h3> </div>
+          
+      <form ng-submit="addTask()">
+          addtask: <input type="text" required ng-model="task.description"  size="45"><br/><br/><br/>
+              Priority: <input type="number" min="1" max="5" required ng-model="task.priority" required><br/><br>
+        
+        <button><input class="button" type="submit" value="Addtolist"></button>
+      </form>
+
+      <table>
+        <thead>
+        <th align="left">addtask</th>
+        <th align="center">Priority</th>
+        
+        </thead>
+      <tbody>
+          <tr ng-repeat="task in taskList | orderBy: 'description' | orderBy: 'priority' : true ">
+            <td align="left">{{task.description}}</td>
+            <td align="center">{{task.priority}}</td>
+            <td align="right">
+              <a href ng-click="deleteTask($index)">done</a>
+            </td>
+          </tr>
+       </tbody>
+    </table>
+
+    </div>
+
+    <script type="text/javascript" src="app2.js"></script>
+    </body>
+</html>
+  

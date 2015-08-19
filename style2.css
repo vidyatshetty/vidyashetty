@@ -1,0 +1,95 @@
+#d
+{
+
+width:1200px;
+
+border-radius: 10px;
+margin:10px;
+background-color: hsla(231, 86%, 40%, 0.62);;
+
+	}
+h2
+{
+	color:#0101DF;
+	font-style: italic;
+}
+h3
+{
+	font-style: italic;
+}
+table th{
+	padding-right: 5px;
+	padding-top: 5px;
+
+}
+table thead {
+	padding-right: 5px;
+	word-spacing: 100px
+}
+form {
+	line-height: 5px;
+}
+body{
+	background-color: #585858;
+	margin:20px;
+	padding:50px;
+	background: url(i.jpg) no-repeat center center fixed;
+	background-image: cover;
+}
+#e
+{
+	background-color:#A6CAE6;
+	color: #0404B4;
+	width:400px;
+	text-align: center;
+	border-radius: 10px;
+
+}
+#g
+{
+	text-align: center;
+	width:400px;
+	background-color: #A6CAE6;
+	margin:10px;
+	border-radius: 100px;
+}
+#im
+{
+	width:250px;
+	height:250px;
+	border-radius: 10px;
+}
+#m
+{
+	border-radius: 100px;
+}
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+.button{
+	background-color: transparent;
+	border:none;
+	color:white;
+}
+.done{
+	background-color: transparent;
+	border:none;
+	color:white;
+	margin:1px;
+	
+
+}
